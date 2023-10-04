@@ -1,0 +1,17 @@
+<!-- Details Section -->
+<div *ngIf="employee">
+    <h2>{{employee.name | uppercase}} Details</h2>
+    <div><span>id: </span> {{employee.id}}</div>
+    <div>
+        <label for="employee-name">Employee Name: </label>
+        <input id="hero-name" [(ngModel)]="employee.name"
+        placeholder="Name">
+    </div>
+    <div>
+        <label for="employee-designation">Employee designation: </label>
+        <input id="hero-name" [(ngModel)]="employee.designation"
+        placeholder="designation">
+
+    </div>
+</div>
+<button type="button" (click)="goBack()">go back</button>
